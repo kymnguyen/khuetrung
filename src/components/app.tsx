@@ -23,11 +23,10 @@ const MyApp = () => {
         <App>
           <SnackbarProvider>
             <ZMPRouter>
-              <Cart />
               <Header />
               <AnimationRoutes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/chat" element={<ChatPage />}></Route>
+                <Route path="/chat" element={<ChatPage />} />
               </AnimationRoutes>
               <NavigationBar />
             </ZMPRouter>

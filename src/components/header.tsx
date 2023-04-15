@@ -13,14 +13,6 @@ function AppHeader() {
   );
 
   const title = useMemo(() => {
-    if (location.pathname === "/calendar") {
-      return "Thông báo";
-    }
-    if (location.pathname === "/restaurant") {
-      if (restaurant) {
-        return restaurant.name;
-      }
-    }
     return getConfig((c) => c.app.title);
   }, [location.pathname]);
 
@@ -30,7 +22,7 @@ function AppHeader() {
         className="sticky top-0"
         title={title}
         style={{ backgroundColor: getConfig((c) => c.app.statusBarColor) }}
-        showBackIcon={location.pathname !== "/"}
+        showBackIcon={false}
       />
     </>
   );
