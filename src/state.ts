@@ -1,5 +1,5 @@
 import { atom, selector } from "recoil";
-import { Booking, Cart, Location, Restaurant, TabType } from "./models";
+import { Booking, Cart, Location, MenuHome, Restaurant, TabType } from "./models";
 import { calcCrowFliesDistance } from "./utils/location";
 import sdk from "./utils/sdk";
 
@@ -115,6 +115,72 @@ export const menuState = selector({
     };
   },
 });
+
+export const menuHomeState = selector<MenuHome[]>({
+  key: "menuHome",
+  get: () => [
+    {
+      id: 0,
+      name: "Tiện ích VNeID",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 1,
+      name: "Dịch vụ công trực tuyến",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 2,
+      name: "Video hướng dẫn",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 3,
+      name: "Thủ tục hành chính",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 4,
+      name: "Phản ánh kiến nghị",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 5,
+      name: "Biểu mẫu",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 6,
+      name: "Tra cứu hồ sơ",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 7,
+      name: "Đăng ký shipper về tận tay",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 8,
+      name: "Truyền thông",
+      icon: "",
+      router: "",
+    },
+    {
+      id: 9,
+      name: "Liên hệ",
+      icon: "",
+      router: "",
+    }
+  ]
+})
 
 export const foodsState = selector({
   key: "foods",

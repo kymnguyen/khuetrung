@@ -33,6 +33,13 @@ export interface Menu {
   categories: Category[];
 }
 
+export interface MenuHome {
+  id: number;
+  name: string;
+  icon: string;
+  router: string;
+}
+
 export interface Category {
   id: number;
   name: string;

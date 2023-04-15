@@ -12,6 +12,8 @@ import {
   popularRestaurantsState,
   userState,
 } from "../state";
+import Welcome from "../components/home/welcome";
+import Menu from "../components/home/menu";
 
 const { Title, Header } = Text;
 
@@ -72,40 +74,15 @@ function Nearest() {
   );
 }
 
-function Welcome() {
-  const user = useRecoilValue(userState);
-  return (
-    <>
-      <Avatar className="shadow align-middle mb-2" src={user.avatar}>
-        Hi
-      </Avatar>
-      <Text size="small">{user.name ? <>Chào, {user.name}!</> : "..."}</Text>
-      <Text className="text-[25px] leading-[29px] font-bold">
-        Hôm nay bạn muốn ăn ở đâu?
-      </Text>
-    </>
-  );
-}
-
 const HomePage = () => {
   return (
-    <Page>
-      <Box mx={4} mb={4} mt={5}>
+    <Page className="flex" >
+      <Box mx={4} mb={4} mt={5} flex flexDirection="column" className="flex-1">
         <Suspense>
           <Welcome />
+          <Menu />
         </Suspense>
-        {getConfig((c) => c.template.searchBar) && (
-          <>
-            <Inquiry />
-            <Header className="mt-6 font-semibold">Phân loại nhanh</Header>
-          </>
-        )}
-        <QuickFilter />
       </Box>
-      <Popular />
-      <Suspense>
-        <Nearest />
-      </Suspense>
     </Page>
   );
 };

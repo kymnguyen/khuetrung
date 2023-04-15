@@ -9,9 +9,9 @@ const navItems = [
     icon: <Icon icon="zi-home" />,
   },
   {
-    path: "/calendar",
-    label: "Lịch của tôi",
-    icon: <Icon icon="zi-calendar" />,
+    path: "/chat",
+    label: "Chat",
+    icon: <Icon icon="zi-chat" />,
   },
 ];
 
@@ -30,19 +30,17 @@ function NavigationBar() {
 
   return (
     <>
-      {location.pathname !== "/restaurant" && (
-        <>
-          <BottomNavigation
-            id="bottom-nav"
-            activeKey={activeTab}
-            onChange={(key) => setActiveTab(key)}
-          >
-            {navItems.map(({ path, label, icon }) => (
-              <BottomNavigation.Item key={path} label={label} icon={icon} />
-            ))}
-          </BottomNavigation>
-        </>
-      )}
+
+      <BottomNavigation
+        id="bottom-nav"
+        activeKey={activeTab}
+        onChange={(key) => setActiveTab(key)}
+      >
+        {navItems.map(({ path, label, icon }) => (
+          <BottomNavigation.Item key={path} label={label} icon={icon} />
+        ))}
+      </BottomNavigation>
+
     </>
   );
 }
