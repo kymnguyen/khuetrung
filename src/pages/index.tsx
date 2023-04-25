@@ -8,7 +8,7 @@ import Menu from "../components/home/menu";
 
 const HomePage = () => {
   return (
-    <Page className="flex" >
+    <Page className="flex bg-[#bb4645]" >
       <Box mx={4} mb={4} mt={5} flex flexDirection="column" className="flex-1">
         <Suspense>
           <Welcome />

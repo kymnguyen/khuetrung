@@ -121,64 +121,74 @@ export const menuHomeState = selector<MenuHome[]>({
   get: () => [
     {
       id: 0,
-      name: "Tiện ích VNeID",
+      name: "Kích hoạt VNeID trên máy tính",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?zl3rd=815789662550058820&id=c3eb9fb83cfdd5a38cec&zarsrc=4",
     },
     {
       id: 1,
-      name: "Dịch vụ công trực tuyến",
+      name: "Đăng ký tạm trú",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=8b6b6e9acddf24817dce&pageId=2487050000180599437",
     },
     {
       id: 2,
-      name: "Video hướng dẫn",
+      name: "Dịch vụ công trực tuyến",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=1185a1dce6990fc75688&pageId=2487050000180599437",
     },
     {
       id: 3,
-      name: "Thủ tục hành chính",
+      name: "Đăng ký tạm trú trên dịch vụ công trực tuyến",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=8b6b6e9acddf24817dce&pageId=2487050000180599437",
     },
     {
       id: 4,
-      name: "Phản ánh kiến nghị",
+      name: "Tài khoản định danh điện tử",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=a71b5feafcaf15f14cbe&pageId=2487050000180599437",
     },
     {
       id: 5,
-      name: "Biểu mẫu",
+      name: "Đăng ký tài khoản định danh điện tử mức 1",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=bcfa420be14e0810515f&pageId=2487050000180599437",
     },
     {
       id: 6,
-      name: "Tra cứu hồ sơ",
+      name: "Đăng ký tài khoản định danh điện tử mức 2",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=2044dcb57ff096aecfe1&pageId=2487050000180599437",
     },
     {
       id: 7,
-      name: "Đăng ký shipper về tận tay",
+      name: "Kích hoạt tài khoản định danh điện tử",
       icon: "",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=2eaacc5b6f1e8640df0f&pageId=2487050000180599437",
     },
-    {
-      id: 8,
-      name: "Truyền thông",
-      icon: "",
-      router: "",
-    },
-    {
-      id: 9,
-      name: "Liên hệ",
-      icon: "",
-      router: "",
-    }
+    // {
+    //   id: 8,
+    //   name: "Truyền thông",
+    //   icon: "",
+    //   router: "",
+    //   url: "http://www.dean06sonla.vn/dichvucong",
+    // },
+    // {
+    //   id: 9,
+    //   name: "Liên hệ",
+    //   icon: "",
+    //   router: "",
+    //   url: "http://www.dean06sonla.vn/dichvucong",
+    // }
   ]
 })
 

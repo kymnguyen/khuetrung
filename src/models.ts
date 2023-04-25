@@ -38,6 +38,7 @@ export interface MenuHome {
   name: string;
   icon: string;
   router: string;
+  url: string;
 }
 
 export interface Category {

@@ -30,7 +30,6 @@ function NavigationBar() {
 
   return (
     <>
-
       <BottomNavigation
         id="bottom-nav"
         activeKey={activeTab}
