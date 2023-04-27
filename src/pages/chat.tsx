@@ -16,7 +16,7 @@ function ChatPage() {
   };
 
   return (
-    <Page className="min-h-0 bg-[#bb4645]">
+    <Page className="min-h-0">
       <Box m={4}>
         <Box className="flex flex-col w-full py-4 bg-white rounded-md justify-center items-center">
           <Avatar
@@ -26,7 +26,7 @@ function ChatPage() {
           >
             Hi
           </Avatar>
-          <Text size="normal" className="font-semibold mb-4">
+          <Text size="large" className="font-semibold mb-4">
             Công an phường Khuê Trung
           </Text>
           <Button
