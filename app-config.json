@@ -1,13 +1,18 @@
 {
   "app": {
-    "title": "Khue Trung Cam Le",
+    "title": "Công an phường Khuê Trung, quận Cẩm Lệ, tp Đà Nẵng",
     "headerColor": "",
-    "textColor": "black",
+    "textColor": "white",
     "statusBarColor": "#f4f5f6",
-    "leftButton": "back"
+    "leftButton": "none",
+    "actionBarHidden": true,
+    "hideAndroidBottomNavigationBar": false,
+    "hideIOSSafeAreaBottom": false,
+    "selfControlLoading": false,
+    "statusBar": "transparent"
   },
   "template": {
-    "primaryColor": "",
+    "primaryColor": "#bb4645",
     "secondaryColor": "",
     "serviceFee": 25000,
     "searchBar": true

@@ -30,7 +30,6 @@ function NavigationBar() {
 
   return (
     <>
-
       <BottomNavigation
         id="bottom-nav"
         activeKey={activeTab}
@@ -40,7 +39,6 @@ function NavigationBar() {
           <BottomNavigation.Item key={path} label={label} icon={icon} />
         ))}
       </BottomNavigation>
-
     </>
   );
 }

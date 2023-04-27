@@ -1,5 +1,12 @@
 import { atom, selector } from "recoil";
-import { Booking, Cart, Location, MenuHome, Restaurant, TabType } from "./models";
+import {
+  Booking,
+  Cart,
+  Location,
+  MenuHome,
+  Restaurant,
+  TabType,
+} from "./models";
 import { calcCrowFliesDistance } from "./utils/location";
 import sdk from "./utils/sdk";
 
@@ -121,66 +128,62 @@ export const menuHomeState = selector<MenuHome[]>({
   get: () => [
     {
       id: 0,
-      name: "Tiện ích VNeID",
-      icon: "",
+      name: "Kích hoạt VNeID trên máy tính",
+      icon: "https://zalo-egov-article-photo.zapps.me/adb181caf29f1bc1428e#273646063",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?zl3rd=815789662550058820&id=c3eb9fb83cfdd5a38cec&zarsrc=4",
     },
     {
       id: 1,
-      name: "Dịch vụ công trực tuyến",
-      icon: "",
+      name: "Đăng ký tạm trú",
+      icon: "https://zalo-egov-article-photo.zapps.me/7eb6c4c2b7975ec90786#273649273",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=8b6b6e9acddf24817dce&pageId=2487050000180599437",
     },
     {
       id: 2,
-      name: "Video hướng dẫn",
-      icon: "",
+      name: "Dịch vụ công trực tuyến",
+      icon: "https://zalo-egov-article-photo.zapps.me/4b979a1a8152680c3143#220686970",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=1185a1dce6990fc75688&pageId=2487050000180599437",
     },
     {
       id: 3,
-      name: "Thủ tục hành chính",
-      icon: "",
+      name: "Đăng ký tạm trú trên dịch vụ công trực tuyến",
+      icon: "https://zalo-egov-article-photo.zapps.me/7eb6c4c2b7975ec90786#273649273",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=8b6b6e9acddf24817dce&pageId=2487050000180599437",
     },
     {
       id: 4,
-      name: "Phản ánh kiến nghị",
-      icon: "",
+      name: "Tài khoản định danh điện tử",
+      icon: "https://zalo-egov-article-photo.zapps.me/adb181caf29f1bc1428e#273646063",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=a71b5feafcaf15f14cbe&pageId=2487050000180599437",
     },
     {
       id: 5,
-      name: "Biểu mẫu",
-      icon: "",
+      name: "Đăng ký tài khoản định danh điện tử mức 1",
+      icon: "https://zalo-egov-article-photo.zapps.me/adb181caf29f1bc1428e#273646063",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=bcfa420be14e0810515f&pageId=2487050000180599437",
     },
     {
       id: 6,
-      name: "Tra cứu hồ sơ",
-      icon: "",
+      name: "Đăng ký tài khoản định danh điện tử mức 2",
+      icon: "https://zalo-egov-article-photo.zapps.me/adb181caf29f1bc1428e#273646063",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=2044dcb57ff096aecfe1&pageId=2487050000180599437",
     },
     {
       id: 7,
-      name: "Đăng ký shipper về tận tay",
-      icon: "",
+      name: "Kích hoạt tài khoản định danh điện tử",
+      icon: "https://zalo-egov-article-photo.zapps.me/adb181caf29f1bc1428e#273646063",
       router: "",
+      url: "https://rd.zapps.vn/detail/2487050000180599437?id=2eaacc5b6f1e8640df0f&pageId=2487050000180599437",
     },
-    {
-      id: 8,
-      name: "Truyền thông",
-      icon: "",
-      router: "",
-    },
-    {
-      id: 9,
-      name: "Liên hệ",
-      icon: "",
-      router: "",
-    }
-  ]
-})
+  ],
+});
 
 export const foodsState = selector({
   key: "foods",
