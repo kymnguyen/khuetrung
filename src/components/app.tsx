@@ -5,9 +5,6 @@ import { RecoilRoot } from "recoil";
 import HomePage from "../pages";
 import Header from "./header";
 import NavigationBar from "./navigation-bar";
-import RestaurantPage from "../pages/restaurant";
-import CalendarPage from "../pages/calendar";
-import Cart from "./cart";
 import { ConfigProvider, getConfig } from "./config-provider";
 import ChatPage from "../pages/chat";
 

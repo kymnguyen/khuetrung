@@ -39,7 +39,6 @@ function NavigationBar() {
           <BottomNavigation.Item key={path} label={label} icon={icon} />
         ))}
       </BottomNavigation>
-
     </>
   );
 }

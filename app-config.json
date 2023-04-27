@@ -1,8 +1,8 @@
 {
   "app": {
-    "title": "Khuê Trung Cẩm Lệ",
+    "title": "Công an phường Khuê Trung, quận Cẩm Lệ, tp Đà Nẵng",
     "headerColor": "",
-    "textColor": "black",
+    "textColor": "white",
     "statusBarColor": "#f4f5f6",
     "leftButton": "none",
     "actionBarHidden": true,
