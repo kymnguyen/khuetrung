@@ -13,24 +13,26 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
       onClick={() => {
         openWebview({
           url: item.url,
-          success: () => {},
-          fail: (error) => {},
+          success: () => { },
+          fail: (error) => { },
         });
       }}
       key={item.id}
-      className="flex border-0 flex-col bg-rose-100 rounded-md row-span-3 h-auto items-center pb-1 p-0"
+      className="flex-2 border-0 flex-col bg-rose-100 rounded-md row-span-3 h-auto items-center pb-1 p-0"
     >
-      <Box className="w-full rounded-md">
+      <Box className="flex-1 w-full rounded-md">
         <div className="relative aspect-video w-full">
           <img
             src={item.icon}
-            className="relative w-full h-full object-cover rounded-xl"
+            className="relative w-full h-full object-cover rounded-md"
           />
         </div>
       </Box>
-      <Text size="xxxSmall" className="text-center px-1 mt-1">
-        {item.name}
-      </Text>
+      <Box className="flex h-10 justify-center items-center">
+        <Text size="xxxSmall" className="text-center px-1 mt-1">
+          {item.name}
+        </Text>
+      </Box>
     </button>
   );
 };

@@ -16,7 +16,8 @@ function ChatPage() {
   };
 
   return (
-    <Page className="min-h-0 bg-[#bb4645]">
+    // bg-[#bb4645]
+    <Page className="min-h-0">
       <Box m={4}>
         <Box className="flex flex-col w-full py-4 bg-white rounded-md justify-center items-center">
           <Avatar
