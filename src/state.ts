@@ -6,6 +6,7 @@ import {
   MenuHome,
   Restaurant,
   TabType,
+  VNeID,
 } from "./models";
 import { calcCrowFliesDistance } from "./utils/location";
 import sdk from "./utils/sdk";
@@ -130,7 +131,7 @@ export const menuHomeState = selector<MenuHome[]>({
       id: 0,
       name: "Tiện ích VNeID",
       icon: "https://zalo-egov-article-photo.zapps.me/adb181caf29f1bc1428e#273646063",
-      router: "",
+      router: "/vneid",
       url: "https://rd.zapps.vn/detail/2487050000180599437?zl3rd=815789662550058820&id=c3eb9fb83cfdd5a38cec&zarsrc=4",
     },
     {
@@ -198,6 +199,44 @@ export const menuHomeState = selector<MenuHome[]>({
     },
   ],
 });
+
+export const vneIDState = selector<VNeID[]>({
+  key: "vneidList",
+  get: () => [
+    {
+      id: 1,
+      name: 'Định danh điện tử là gì?',
+      detail: 'Ngày 08/11/2021, Thủ tướng Chính phủ ban hành Quyết định số 34/2021/QĐ-TTg quy định về định danh và xác thực điện tử trên nền tảng cơ sở dữ liệu (CSDL) quốc gia về dân cư, CSDL căn cước công dân và CSDL về xuất nhập cảnh (sau đây gọi là Quyết định 34), theo đó, định danh điện tử là hoạt động thu thập, tạo lập, gắn danh tính điện tử cho cá nhân và hoạt động quản lý danh tính điện tử. Danh tính điện tử là tập hợp dữ liệu số trong CSDL quốc gia về dân cư, CSDL căn cước công dân và CSDL quốc gia về xuất nhập cảnh cho phép xác định duy nhất một cá nhân trên môi trường điện tử. Do đó, định danh điện tử có thể hiểu theo cách đơn giản là xác thực cá nhân là duy nhất trên không gian mạng và bảo đảm quyền, lợi ích của cá nhân khi giao dịch, trao đổi thông tin trên không gian mạng. Ứng dụng VNeID là ứng dụng định danh điện tử do Bộ Công an trực tiếp quản lý bởi Trung tâm Dữ liệu Quốc gia về Dân cư (http://rarcenter.vn) có giá trị sử dụng thay thế các giấy tờ truyền thống, định danh công dân trên môi trường kỹ thuật số, cung cấp các tiện ích phát triển công dân số, chính phủ số, xã hội số. ',
+    },
+    {
+      id: 2,
+      name: 'VNeID đem lại lợi ích gì cho người dân?',
+      detail: '',
+    },
+    {
+      id: 3,
+      name: 'Tài khoản định danh điện tử có mấy loại?',
+      detail: 'Theo Nghị định 34 tài khoản định danh điện tử có 02 mức độ gồm, cụ thể: - Mức độ 1 là tài khoản được tạo lập trong trường hợp thông tin của công dân kê khai đã được so sánh, đối chiếu tự động trùng khớp với thông tin trong CSDL quốc gia về dân cư. Tài khoản được tạo lập trong trường hợp thông tin của người nước ngoài đã được so sánh, đối chiếu trùng khớp với thông tin trong CSDL quốc gia về xuất nhập cảnh, trừ ảnh chân dung và vân tay.- Mức độ 2 là tài khoản được tạo lập trong trường hợp thông tin của cá nhân kê khai đã được xác minh bằng ảnh chân dung hoặc vân tay trùng khớp với thông tin trong CSDL quốc gia về dân cư, CSDL căn cước công dân hoặc CSDL quốc gia về xuất nhập cảnh.',
+    },
+    {
+      id: 4,
+      name: 'Ứng dụng VNeID để làm gì?',
+      detail: '',
+    },
+    {
+      id: 5,
+      name: 'Có hay không nên cài đặt ứng dụng VNeID?',
+      detail: 'Theo quy định hiện hành, công dân từ đủ 14 tuổi trở lên có quyền đăng ký tài khoản định danh điện tử thông qua ứng dụng định danh điện tử; người chưa đủ 14 tuổi thì được đăng ký thông qua tài khoản định danh điện tử của cha, mẹ hoặc người giám hộ, người được giám hộ khác thì đăng ký theo tài khoản định danh của người giám hộ.Theo số liệu thống kê của Liên minh Viễn thông Quốc tế (ITU), năm 2021 Việt Nam có 85.621.091 thuê bao di động đang hoạt động có sử dụng Internet băng rộng. Với những vai trò đã nêu, có thể nói ứng dụng VNeID đem đến nhiều tiện ích cho người dân, tổ chức. Chỉ cần kích hoạt tài khoản trên thiết bị thông minh, người dân, tổ chức sẽ được tiếp cận các dịch vụ công, đặc biệt là dịch vụ công trực tuyến, các giao dịch không cần giấy tờ, hạn chế mang theo giấy tờ hồ sơ hoặc rủi ro thất lạc giấy tờ... khi đã hoàn tất việc tích hợp thông tin hồ sơ của mình lên tài khoản định danh điện tử.Do đó, việc cài hoặc không cài đặt là quyền lợi của mỗi cá nhân, tổ chức, việc quyết định cài đặt hay không cài đặt do mỗi chúng ta, và mỗi người sẽ có cho mình một câu trả lời.',
+    },
+    {
+      id: 6,
+      name: 'Những rủi ro hạn chế nguy cơ mất an toàn thông tin sau khi cài đặt ứng dụng?',
+      detail: 'Hiện chưa có báo cáo đánh giá về nguy cơ mất an toàn thông tin, việc cài đặt và kích hoạt thành công tài khoản được thực hiện theo quy trình chặt chẽ, có sự kết nối đồng bộ với các CSDL quốc gia về dân cư, CSDL căn cước công dân và CSDL về xuất nhập cảnh. Mọi thông tin đều được mã hóa và thực hiện theo các tiêu chuẩn bảo mật, an toàn thông tin bắt buộc.Để bảo đảm an toàn thông tin cá nhân, công dân, tổ chức cần quản lý chặt chẽ thiết bị đã kích hoạt tài khoản VNeID, không chia sẻ tài khoản, mật khẩu truy cập, mã OTP, Passcode trong suốt quá trình sử dụng ứng dụng và trong các giao dịch trực tuyến. Không cho người khác mượn thiết bị, trường hợp cho mượn phải đăng xuất tài khoản khỏi thiết bị và không cung cấp mã OTP cho bất cứ ai khi bản thân không thực hiện đăng nhập/đăng ký tài khoản vào thiết bị khác... Điều quan trọng là luôn cập nhật ứng dụng và đọc kỹ những khuyến nghị về an toàn thông tin khi cài đặt, kích hoạt và sử dụng ứng dụng.',
+    },
+  ]
+});
+
+
 
 export const foodsState = selector({
   key: "foods",

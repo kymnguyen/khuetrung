@@ -1,5 +1,6 @@
 import React from "react";
 import { openWebview } from "zmp-sdk";
+import { useNavigate } from "react-router-dom";
 import { Box, Text } from "zmp-ui";
 import { MenuHome } from "../../models";
 
@@ -8,14 +9,20 @@ interface MenuItemProps {
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
+  const navigate = useNavigate();
   return (
     <button
       onClick={() => {
-        openWebview({
-          url: item.url,
-          success: () => { },
-          fail: (error) => { },
-        });
+        if (item.router !== '') {
+          navigate(item.router);
+        } else {
+          openWebview({
+            url: item.url,
+            success: () => { },
+            fail: (error) => { },
+          });
+        }
+
       }}
       key={item.id}
       className="flex-2 border-0 flex-col bg-rose-100 rounded-md row-span-3 h-auto items-center pb-1 p-0"

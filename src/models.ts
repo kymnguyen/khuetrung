@@ -41,6 +41,12 @@ export interface MenuHome {
   url: string;
 }
 
+export interface VNeID {
+  id: number;
+  name: string;
+  detail: string;
+}
+
 export interface Category {
   id: number;
   name: string;

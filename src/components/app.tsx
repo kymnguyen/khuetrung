@@ -7,6 +7,7 @@ import Header from "./header";
 import NavigationBar from "./navigation-bar";
 import { ConfigProvider, getConfig } from "./config-provider";
 import ChatPage from "../pages/chat";
+import VNeIDPage from "../pages/vneid";
 
 const MyApp = () => {
   return (
@@ -24,6 +25,7 @@ const MyApp = () => {
               <AnimationRoutes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/chat" element={<ChatPage />} />
+                <Route path="/vneid" element={<VNeIDPage />} />
               </AnimationRoutes>
               <NavigationBar />
             </ZMPRouter>
