@@ -45,6 +45,7 @@ export interface VNeID {
   id: number;
   name: string;
   detail: string;
+  url?: string;
 }
 
 export interface Category {

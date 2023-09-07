@@ -1,7 +1,7 @@
 import React from "react";
 import { useMemo } from "react";
 import { useLocation } from "react-router-dom";
-import { Header } from "zmp-ui";
+import { Avatar, Header } from "zmp-ui";
 import { useRestaurant } from "../hooks";
 import { getConfig } from "./config-provider";
 
@@ -17,14 +17,12 @@ function AppHeader() {
   }, [location.pathname]);
 
   return (
-    <>
-      <Header
-        className="sticky top-0"
-        title={title}
-        style={{ backgroundColor: getConfig((c) => c.app.statusBarColor) }}
-        showBackIcon={false}
-      />
-    </>
+    <div className="px-2 bg-white h-20 flex items-end">
+      <div className="flex flex-row items-center justify-center">
+        <Avatar size={40} className="" src="src/static/icons/logo.jpg" />
+        <p className="ml-1 text-base font-bold">Nhân dân - doanh nghiệp số</p>
+      </div>
+    </div>
   );
 }
 
